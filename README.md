@@ -1,63 +1,67 @@
 # Tech English Daily
 
-A web app to practice the **English used every day in IT jobs**: work vocabulary,
-system messages (errors and warnings) and phrases for meetings, chats and emails.
+App web para praticar o **inglês do dia a dia de quem trabalha com TI**: vocabulário
+do trabalho, mensagens do sistema (erros e avisos) e frases para reuniões, chats e e-mails.
 
-Built for Brazilian IT professionals with **basic English**. The interface is in
-Portuguese and the content is in English, with translations and tips.
+Feito para profissionais brasileiros de TI com **inglês básico**. A interface é em
+português, e o conteúdo é em inglês com tradução e dicas.
 
-## Features
+🌐 **Acesse:** https://qaline97.github.io/tech-english/
 
-- **Vocabulary flashcards** with spaced repetition (Leitner system): words you
-  miss come back sooner, and words you know come back later.
-- **System messages quiz**: read real-looking error and warning messages
-  (`Connection timed out`, `Permission denied`...) and choose what they mean.
-- **Work phrases quiz**: choose what to say in a daily, a meeting, a chat or an email.
-- **Pronunciation**: listen to words and phrases (browser Web Speech API).
-- **Progress tracking**: study streak, accuracy and mastered words, saved in the browser.
-- **Content validation**: a Python script checks the content files, and it runs
-  automatically on GitHub Actions.
+## Funcionalidades
 
-## Tech stack
+- **Flashcards de vocabulário** com repetição espaçada (sistema Leitner): as palavras
+  que você erra voltam antes, e as que você sabe voltam depois de mais tempo.
+- **Quiz de mensagens do sistema**: leia erros e avisos reais (`Connection timed out`,
+  `Permission denied`...) e escolha o que eles significam.
+- **Quiz de frases do trabalho**: escolha o que dizer na daily, em reuniões, no chat e por e-mail.
+- **Pronúncia**: ouça palavras e frases com a voz do próprio navegador (Web Speech API).
+- **Acompanhamento de progresso**: dias seguidos, porcentagem de acertos e palavras
+  dominadas, tudo salvo no navegador.
+- **Validação do conteúdo**: um script Python confere os arquivos de conteúdo e roda
+  automaticamente no GitHub Actions.
 
-- HTML, CSS and vanilla JavaScript (ES modules), with no build step and no dependencies
-- Content stored as JSON files
-- Python 3 for content validation
-- GitHub Actions for CI
+## Tecnologias
 
-## How to run
+- HTML, CSS e JavaScript puro (ES modules), sem build e sem dependências
+- Conteúdo em arquivos JSON
+- Python 3 para validar o conteúdo
+- GitHub Actions para integração contínua (CI)
+- GitHub Pages para hospedagem
 
-You need Python 3 installed.
+## Como rodar localmente
+
+É preciso ter o Python 3 instalado.
 
 ```bash
 cd tech-english
 python -m http.server 8000
 ```
 
-Open <http://localhost:8000> in your browser.
+Depois acesse <http://localhost:8000> no navegador.
 
-> The app loads JSON files with `fetch`, so opening `index.html` directly
-> (`file://`) does not work. Use a local server.
+> O app carrega os arquivos JSON com `fetch`. Por isso, abrir o `index.html` direto
+> (`file://`) não funciona. Use um servidor local.
 
-## How to validate the content
+## Como validar o conteúdo
 
 ```bash
 python scripts/validate_content.py
 ```
 
-## Project structure
+## Estrutura do projeto
 
 ```
 tech-english/
 ├── index.html
 ├── css/style.css
 ├── js/
-│   ├── app.js          # routing and data loading
-│   ├── srs.js          # spaced repetition (Leitner)
-│   ├── storage.js      # progress saved in localStorage
-│   ├── speech.js       # pronunciation (Web Speech API)
+│   ├── app.js          # rotas e carregamento dos dados
+│   ├── srs.js          # repetição espaçada (Leitner)
+│   ├── storage.js      # progresso salvo no localStorage
+│   ├── speech.js       # pronúncia (Web Speech API)
 │   ├── dates.js, dom.js
-│   └── views/          # home, flashcards, quiz
+│   └── views/          # telas: início, flashcards, quiz
 ├── data/
 │   ├── vocabulary.json
 │   ├── messages.json
@@ -65,15 +69,16 @@ tech-english/
 └── scripts/validate_content.py
 ```
 
-## How to add content
+## Como adicionar conteúdo
 
-Add a new object to one of the files in `data/` with a unique `id`,
-then run the validation script.
+Adicione um novo objeto em um dos arquivos da pasta `data/`, com um `id` único,
+e rode o script de validação.
 
-## Roadmap
+## Próximos passos
 
-- [ ] "Review my mistakes" mode
-- [ ] Listening mode: hear a phrase and choose the right text
-- [ ] More content: job interviews, ETL and data engineering words
-- [ ] Progress dashboard with charts
-- [ ] Python + pandas analysis of study history (exported as CSV)
+- [ ] Lição do dia, com limite diário de palavras novas
+- [ ] Modo "revisar meus erros"
+- [ ] Modo de escuta: ouvir uma frase e escolher o texto certo
+- [ ] Mais conteúdo: entrevistas de emprego e vocabulário de ETL e engenharia de dados
+- [ ] Painel de progresso com gráficos
+- [ ] Análise do histórico de estudo com Python + pandas (exportado em CSV)
