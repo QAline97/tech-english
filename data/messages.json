@@ -1,0 +1,149 @@
+[
+  {
+    "id": "msg-001", "level": "error", "message": "Connection timed out",
+    "answer": "A conexão demorou demais e foi encerrada.",
+    "distractors": ["A conexão foi feita com sucesso.", "O servidor foi desligado para manutenção.", "A senha está incorreta."],
+    "keywords": [{ "en": "connection", "pt": "conexão" }, { "en": "timed out", "pt": "o tempo esgotou" }],
+    "tip": "\"Time out\" = o tempo acabou. Muito comum em conexões com banco de dados."
+  },
+  {
+    "id": "msg-002", "level": "error", "message": "Access denied for user 'ana'",
+    "answer": "A usuária 'ana' não tem permissão de acesso.",
+    "distractors": ["A usuária 'ana' foi criada.", "A usuária 'ana' está conectada.", "A senha da 'ana' vai expirar."],
+    "keywords": [{ "en": "access", "pt": "acesso" }, { "en": "denied", "pt": "negado" }],
+    "tip": "\"Denied\" é o contrário de \"granted\" (concedido)."
+  },
+  {
+    "id": "msg-003", "level": "error", "message": "Login failed. Invalid username or password.",
+    "answer": "O login falhou: usuário ou senha inválidos.",
+    "distractors": ["Login feito com sucesso.", "Sua conta foi apagada.", "O nome de usuário está disponível."],
+    "keywords": [{ "en": "failed", "pt": "falhou" }, { "en": "invalid", "pt": "inválido" }, { "en": "username", "pt": "nome de usuário" }]
+  },
+  {
+    "id": "msg-004", "level": "warning", "message": "Your password will expire in 5 days.",
+    "answer": "Sua senha vai expirar daqui a 5 dias.",
+    "distractors": ["Sua senha expirou há 5 dias.", "Você tem 5 tentativas para digitar a senha.", "Sua senha foi alterada há 5 dias."],
+    "keywords": [{ "en": "will expire", "pt": "vai expirar" }, { "en": "in 5 days", "pt": "daqui a 5 dias" }],
+    "tip": "\"Will\" + verbo indica futuro: \"will expire\" = vai expirar."
+  },
+  {
+    "id": "msg-005", "level": "error", "message": "File not found",
+    "answer": "O arquivo não foi encontrado.",
+    "distractors": ["O arquivo foi salvo.", "O arquivo está aberto em outro programa.", "O arquivo é muito grande."],
+    "keywords": [{ "en": "file", "pt": "arquivo" }, { "en": "found", "pt": "encontrado (passado de find)" }]
+  },
+  {
+    "id": "msg-006", "level": "error", "message": "Permission denied",
+    "answer": "Permissão negada: você não pode fazer essa ação.",
+    "distractors": ["Permissão concedida.", "Pedido de permissão enviado.", "A permissão vai expirar."],
+    "keywords": [{ "en": "permission", "pt": "permissão" }, { "en": "denied", "pt": "negada" }]
+  },
+  {
+    "id": "msg-007", "level": "error", "message": "Table 'sales' does not exist",
+    "answer": "A tabela 'sales' não existe.",
+    "distractors": ["A tabela 'sales' está vazia.", "A tabela 'sales' foi criada.", "A tabela 'sales' está bloqueada."],
+    "keywords": [{ "en": "does not exist", "pt": "não existe" }],
+    "tip": "\"Does not\" (ou \"doesn't\") é a negação no presente para he/she/it."
+  },
+  {
+    "id": "msg-008", "level": "error", "message": "Duplicate entry '123' for key 'PRIMARY'",
+    "answer": "O valor '123' já existe na chave primária (registro duplicado).",
+    "distractors": ["O registro '123' foi apagado.", "A chave '123' foi criada com sucesso.", "O valor '123' está faltando."],
+    "keywords": [{ "en": "duplicate entry", "pt": "registro duplicado" }, { "en": "key", "pt": "chave" }]
+  },
+  {
+    "id": "msg-009", "level": "error", "message": "Out of memory",
+    "answer": "A memória disponível acabou.",
+    "distractors": ["A memória foi liberada.", "A memória está quase cheia.", "Foi instalada mais memória."],
+    "keywords": [{ "en": "out of", "pt": "sem, acabou" }, { "en": "memory", "pt": "memória" }],
+    "tip": "\"Out of\" = sem. Ex.: \"We are out of coffee\" = Estamos sem café."
+  },
+  {
+    "id": "msg-010", "level": "warning", "message": "Disk space is running low",
+    "answer": "O espaço em disco está acabando.",
+    "distractors": ["O disco está rodando rápido.", "O disco está vazio.", "O disco foi desconectado."],
+    "keywords": [{ "en": "disk space", "pt": "espaço em disco" }, { "en": "running low", "pt": "ficando baixo, acabando" }]
+  },
+  {
+    "id": "msg-011", "level": "info", "message": "Update available. Restart now?",
+    "answer": "Há uma atualização disponível. Reiniciar agora?",
+    "distractors": ["A atualização falhou. Tentar de novo?", "O computador foi reiniciado.", "Não há atualizações."],
+    "keywords": [{ "en": "available", "pt": "disponível" }, { "en": "restart", "pt": "reiniciar" }]
+  },
+  {
+    "id": "msg-012", "level": "error", "message": "Something went wrong. Please try again later.",
+    "answer": "Algo deu errado. Tente novamente mais tarde.",
+    "distractors": ["Tudo certo. Pode continuar.", "Algo foi apagado. Restaure agora.", "Tente de novo imediatamente."],
+    "keywords": [{ "en": "went wrong", "pt": "deu errado" }, { "en": "try again", "pt": "tente de novo" }, { "en": "later", "pt": "mais tarde" }]
+  },
+  {
+    "id": "msg-013", "level": "info", "message": "Job completed successfully",
+    "answer": "O job terminou com sucesso.",
+    "distractors": ["O job falhou.", "O job ainda está rodando.", "O job foi cancelado."],
+    "keywords": [{ "en": "completed", "pt": "concluído" }, { "en": "successfully", "pt": "com sucesso" }]
+  },
+  {
+    "id": "msg-014", "level": "error", "message": "Job failed after 3 retries",
+    "answer": "O job falhou depois de 3 tentativas.",
+    "distractors": ["O job vai rodar 3 vezes.", "O job funcionou na 3ª tentativa.", "O job está agendado para daqui a 3 horas."],
+    "keywords": [{ "en": "after", "pt": "depois de" }, { "en": "retry", "pt": "nova tentativa" }]
+  },
+  {
+    "id": "msg-015", "level": "warning", "message": "This action cannot be undone.",
+    "answer": "Esta ação não pode ser desfeita.",
+    "distractors": ["Esta ação ainda não foi feita.", "Esta ação pode ser repetida.", "Esta ação foi cancelada."],
+    "keywords": [{ "en": "cannot", "pt": "não pode" }, { "en": "undone", "pt": "desfeito (de undo)" }],
+    "tip": "Leia com atenção antes de clicar em OK! \"Undo\" = desfazer (Ctrl+Z)."
+  },
+  {
+    "id": "msg-016", "level": "info", "message": "Are you sure you want to delete this file?",
+    "answer": "Você tem certeza de que quer apagar este arquivo?",
+    "distractors": ["O arquivo foi apagado.", "Você quer salvar este arquivo?", "Você quer abrir este arquivo?"],
+    "keywords": [{ "en": "are you sure", "pt": "você tem certeza" }, { "en": "delete", "pt": "apagar, excluir" }]
+  },
+  {
+    "id": "msg-017", "level": "warning", "message": "Unsaved changes will be lost.",
+    "answer": "As alterações não salvas serão perdidas.",
+    "distractors": ["As alterações foram salvas.", "As alterações serão enviadas.", "Não há alterações."],
+    "keywords": [{ "en": "unsaved", "pt": "não salvo" }, { "en": "changes", "pt": "alterações" }, { "en": "lost", "pt": "perdido" }],
+    "tip": "O prefixo \"un-\" funciona como \"não\" ou \"des-\": unsaved, unknown, unlock."
+  },
+  {
+    "id": "msg-018", "level": "error", "message": "Deadlock detected",
+    "answer": "Duas operações ficaram travadas esperando uma pela outra.",
+    "distractors": ["O prazo final foi detectado.", "O banco de dados foi desbloqueado.", "Uma operação terminou rápido."],
+    "keywords": [{ "en": "deadlock", "pt": "impasse, travamento mútuo" }, { "en": "detected", "pt": "detectado" }],
+    "tip": "Não confunda \"deadlock\" (travamento) com \"deadline\" (prazo)."
+  },
+  {
+    "id": "msg-019", "level": "info", "message": "Your session has expired. Please log in again.",
+    "answer": "Sua sessão expirou. Faça login novamente.",
+    "distractors": ["Sua sessão vai começar agora.", "Sua conta foi bloqueada.", "Você saiu com sucesso."],
+    "keywords": [{ "en": "session", "pt": "sessão" }, { "en": "has expired", "pt": "expirou" }, { "en": "again", "pt": "de novo" }]
+  },
+  {
+    "id": "msg-020", "level": "warning", "message": "The file is too large. Maximum size: 10 MB.",
+    "answer": "O arquivo é grande demais. O tamanho máximo é 10 MB.",
+    "distractors": ["O arquivo é pequeno demais.", "O arquivo tem exatamente 10 MB.", "O arquivo foi enviado."],
+    "keywords": [{ "en": "too large", "pt": "grande demais" }, { "en": "size", "pt": "tamanho" }],
+    "tip": "\"Too\" + adjetivo = demais: too slow, too big, too late."
+  },
+  {
+    "id": "msg-021", "level": "error", "message": "Syntax error near 'FROM'",
+    "answer": "Há um erro na escrita do comando perto de 'FROM'.",
+    "distractors": ["A tabela FROM não existe.", "O comando rodou com sucesso.", "O comando está demorando muito."],
+    "keywords": [{ "en": "syntax", "pt": "sintaxe, forma de escrever" }, { "en": "near", "pt": "perto de" }]
+  },
+  {
+    "id": "msg-022", "level": "info", "message": "3 rows affected",
+    "answer": "3 linhas foram afetadas (alteradas).",
+    "distractors": ["3 colunas foram criadas.", "3 erros foram encontrados.", "3 tabelas foram apagadas."],
+    "keywords": [{ "en": "rows", "pt": "linhas" }, { "en": "affected", "pt": "afetadas" }]
+  },
+  {
+    "id": "msg-023", "level": "info", "message": "Loading, please wait...",
+    "answer": "Carregando, aguarde...",
+    "distractors": ["Erro ao carregar.", "Carregamento cancelado.", "Clique para carregar."],
+    "keywords": [{ "en": "loading", "pt": "carregando" }, { "en": "wait", "pt": "esperar, aguardar" }]
+  }
+]

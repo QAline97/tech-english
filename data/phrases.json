@@ -1,0 +1,188 @@
+[
+  {
+    "id": "phr-001", "situation": "daily",
+    "context": "Na daily, você conta o que fez ontem.",
+    "answer": "Yesterday, I worked on the sales report.",
+    "distractors": ["Tomorrow, I will work on the sales report.", "Yesterday, I work in the sales report.", "I'm working on the sales report now."],
+    "translation": "Ontem, eu trabalhei no relatório de vendas.",
+    "tip": "Para falar do passado, muitos verbos ganham -ed: work → worked."
+  },
+  {
+    "id": "phr-002", "situation": "daily",
+    "context": "Na daily, você diz o que vai fazer hoje.",
+    "answer": "Today, I'm going to fix the data load.",
+    "distractors": ["Yesterday, I fixed the data load.", "Today, I go fix the data load.", "Today, I fixed the data load."],
+    "translation": "Hoje, eu vou corrigir a carga de dados.",
+    "tip": "\"I'm going to\" + verbo = eu vou fazer (algo planejado)."
+  },
+  {
+    "id": "phr-003", "situation": "daily",
+    "context": "Na daily, você diz que está travado porque ainda não tem acesso ao banco.",
+    "answer": "I'm blocked because I don't have access to the database.",
+    "distractors": ["I'm blocking the database access.", "I have access to the database now.", "I'm not blocked, I have access."],
+    "translation": "Estou travado porque não tenho acesso ao banco de dados.",
+    "tip": "\"Blocked\" = impedido de continuar. Também se fala \"I have a blocker\"."
+  },
+  {
+    "id": "phr-004", "situation": "daily",
+    "context": "Na daily, você diz que não tem nenhum impedimento.",
+    "answer": "No blockers for me today.",
+    "distractors": ["I have many blockers today.", "No meetings for me today.", "I'm blocked today."],
+    "translation": "Sem impedimentos para mim hoje."
+  },
+  {
+    "id": "phr-005", "situation": "daily",
+    "context": "Você diz que a tarefa está quase pronta.",
+    "answer": "The task is almost done.",
+    "distractors": ["The task is already done.", "The task is not started yet.", "The task is almost do."],
+    "translation": "A tarefa está quase pronta.",
+    "tip": "\"Almost\" = quase. \"Done\" = feito, pronto."
+  },
+  {
+    "id": "phr-006", "situation": "daily",
+    "context": "Você avisa que o pipeline rodou bem ontem à noite.",
+    "answer": "The pipeline ran successfully last night.",
+    "distractors": ["The pipeline will run tomorrow night.", "The pipeline failed last night.", "The pipeline run successful last night."],
+    "translation": "O pipeline rodou com sucesso ontem à noite.",
+    "tip": "\"Run\" é irregular: o passado é \"ran\"."
+  },
+  {
+    "id": "phr-007", "situation": "chat",
+    "context": "Você manda mensagem pedindo ajuda a um colega com uma consulta.",
+    "answer": "Hi! Could you help me with a query?",
+    "distractors": ["Hi! I can help you with a query.", "Hi! Do you help me with a query?", "Hi! I don't need help with a query."],
+    "translation": "Oi! Você poderia me ajudar com uma consulta?",
+    "tip": "\"Could you...?\" é um jeito educado de pedir algo."
+  },
+  {
+    "id": "phr-008", "situation": "chat",
+    "context": "Você vai verificar uma informação e responder depois.",
+    "answer": "Let me check and get back to you.",
+    "distractors": ["Let me check and go back home.", "I checked and everything is fine.", "Check it and tell me."],
+    "translation": "Deixa eu verificar e te dou um retorno.",
+    "tip": "Frase muito usada no trabalho. Decore inteira!"
+  },
+  {
+    "id": "phr-009", "situation": "chat",
+    "context": "Você avisa que vai se atrasar 5 minutos para a reunião.",
+    "answer": "I'll be 5 minutes late for the meeting.",
+    "distractors": ["I was 5 minutes early for the meeting.", "The meeting is in 5 minutes.", "I'll be 5 minutes later the meeting."],
+    "translation": "Vou me atrasar 5 minutos para a reunião.",
+    "tip": "\"Late\" = atrasado. \"Later\" = mais tarde. São palavras diferentes."
+  },
+  {
+    "id": "phr-010", "situation": "chat",
+    "context": "Você agradece a ajuda de um colega.",
+    "answer": "Thanks for your help!",
+    "distractors": ["You're welcome!", "Thanks for your helping!", "Sorry for your help!"],
+    "translation": "Obrigado pela ajuda!",
+    "tip": "\"You're welcome\" é a resposta para \"thank you\" (de nada)."
+  },
+  {
+    "id": "phr-011", "situation": "chat",
+    "context": "Você pergunta até quando a pessoa precisa da entrega.",
+    "answer": "When do you need this by?",
+    "distractors": ["When did you need this?", "Where do you need this?", "Why do you need this?"],
+    "translation": "Até quando você precisa disso?",
+    "tip": "\"By\" + data = até (prazo). Ex.: \"by Friday\" = até sexta."
+  },
+  {
+    "id": "phr-012", "situation": "chat",
+    "context": "Você avisa que vai sair para almoçar e volta em uma hora.",
+    "answer": "I'm going to lunch. Back in one hour.",
+    "distractors": ["I'm going to launch. Back in one hour.", "I'm having lunch tomorrow.", "I was at lunch one hour ago."],
+    "translation": "Vou almoçar. Volto em uma hora.",
+    "tip": "Cuidado: \"lunch\" = almoço; \"launch\" = lançamento."
+  },
+  {
+    "id": "phr-013", "situation": "meeting",
+    "context": "Você entra na call e quer saber se as pessoas te ouvem.",
+    "answer": "Can you hear me?",
+    "distractors": ["Can you see me?", "Can I hear you?", "Do you listen me?"],
+    "translation": "Vocês conseguem me ouvir?",
+    "tip": "\"Hear\" = ouvir (perceber o som). \"Listen to\" = escutar com atenção."
+  },
+  {
+    "id": "phr-014", "situation": "meeting",
+    "context": "Você não entendeu o que a pessoa disse.",
+    "answer": "Sorry, could you say that again?",
+    "distractors": ["Sorry, I understood everything.", "Sorry, can you to repeat?", "Sorry, I'll say that again."],
+    "translation": "Desculpe, você poderia repetir?",
+    "tip": "Depois de \"can\" e \"could\" o verbo vem sem \"to\"."
+  },
+  {
+    "id": "phr-015", "situation": "meeting",
+    "context": "A pessoa fala rápido demais e você pede para falar mais devagar.",
+    "answer": "Could you speak more slowly, please?",
+    "distractors": ["Could you speak louder, please?", "Could you speak more fast, please?", "Could you stop speaking, please?"],
+    "translation": "Você poderia falar mais devagar, por favor?",
+    "tip": "Pedir isso é normal e educado. Ninguém espera que você entenda tudo."
+  },
+  {
+    "id": "phr-016", "situation": "meeting",
+    "context": "Você pede para alguém compartilhar a tela.",
+    "answer": "Could you share your screen, please?",
+    "distractors": ["Could you share your file, please?", "Can I share my screen?", "Could you turn on your camera, please?"],
+    "translation": "Você poderia compartilhar sua tela, por favor?"
+  },
+  {
+    "id": "phr-017", "situation": "meeting",
+    "context": "Sua internet está ruim e você pede desculpas.",
+    "answer": "Sorry, my internet connection is unstable.",
+    "distractors": ["Sorry, my internet is very fast.", "Sorry, my computer is new.", "Sorry, I'm in another meeting."],
+    "translation": "Desculpe, minha conexão de internet está instável."
+  },
+  {
+    "id": "phr-018", "situation": "meeting",
+    "context": "Você concorda com a ideia de um colega.",
+    "answer": "I agree with you.",
+    "distractors": ["I am agree with you.", "I disagree with you.", "I agree you."],
+    "translation": "Eu concordo com você.",
+    "tip": "Erro muito comum: nunca diga \"I am agree\". O certo é \"I agree\"."
+  },
+  {
+    "id": "phr-019", "situation": "meeting",
+    "context": "Você discorda, mas quer ser educado.",
+    "answer": "I see your point, but I have a different idea.",
+    "distractors": ["You are wrong.", "I see your point, so I agree.", "I don't see you."],
+    "translation": "Entendo seu ponto, mas tenho uma ideia diferente."
+  },
+  {
+    "id": "phr-020", "situation": "meeting",
+    "context": "Alguém faz uma pergunta e você não sabe a resposta agora.",
+    "answer": "I'm not sure, but I'll find out.",
+    "distractors": ["I'm sure, and I already know.", "I'm not sure, and I won't check.", "I found it yesterday."],
+    "translation": "Não tenho certeza, mas vou descobrir.",
+    "tip": "\"Find out\" = descobrir (uma informação)."
+  },
+  {
+    "id": "phr-021", "situation": "email",
+    "context": "Você começa um e-mail para um colega chamado Mark.",
+    "answer": "Hi Mark, I hope you're doing well.",
+    "distractors": ["Hi Mark, I hope you're done.", "Bye Mark, I hope you're doing well.", "Hi Mark, are you well doing?"],
+    "translation": "Oi Mark, espero que você esteja bem."
+  },
+  {
+    "id": "phr-022", "situation": "email",
+    "context": "Você avisa que o arquivo está anexado.",
+    "answer": "Please find the file attached.",
+    "distractors": ["Please attach the file.", "I couldn't find the file.", "Please find the file in my attached."],
+    "translation": "Segue o arquivo em anexo.",
+    "tip": "Expressão padrão em e-mails. Também pode: \"I've attached the file\"."
+  },
+  {
+    "id": "phr-023", "situation": "email",
+    "context": "Você avisa que os dados vão atrasar hoje.",
+    "answer": "The data will be delayed today. Sorry for the inconvenience.",
+    "distractors": ["The data was early today. Thanks!", "The data is deleted today. Sorry for the inconvenience.", "The data will be ready early today."],
+    "translation": "Os dados vão atrasar hoje. Desculpe o transtorno."
+  },
+  {
+    "id": "phr-024", "situation": "email",
+    "context": "Você termina o e-mail de forma profissional.",
+    "answer": "Best regards,",
+    "distractors": ["Kisses,", "See you never,", "Regards best,"],
+    "translation": "Atenciosamente,",
+    "tip": "Em e-mail de trabalho em inglês, não use \"kisses\" (beijos). Prefira \"Best regards\" ou \"Thanks\"."
+  }
+]
