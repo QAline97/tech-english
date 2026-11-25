@@ -3,6 +3,7 @@ import { speak, stopSpeaking } from './speech.js';
 import { renderHome } from './views/home.js';
 import { renderFlashcards } from './views/flashcards.js';
 import { renderQuiz } from './views/quiz.js';
+import { renderTutor } from './views/tutor.js';
 
 const DATA_FILES = {
   vocabulary: 'data/vocabulary.json',
@@ -15,6 +16,7 @@ const routes = {
   '/flashcards': renderFlashcards,
   '/messages': (ctx) => renderQuiz(ctx, 'messages'),
   '/phrases': (ctx) => renderQuiz(ctx, 'phrases'),
+  '/tutor': renderTutor,
 };
 
 // Shared context passed to every view.
@@ -22,6 +24,7 @@ const ctx = {
   root: document.getElementById('app'),
   data: null,
   state: loadState(),
+  cleanup: null, // optional function a view sets to stop its work when the user leaves
   save() {
     saveState(this.state);
   },
@@ -42,6 +45,8 @@ function router() {
   const path = location.hash.slice(1) || '/';
   const view = routes[path] ?? renderHome;
   stopSpeaking();
+  ctx.cleanup?.();
+  ctx.cleanup = null;
   ctx.root.onclick = null; // each view installs its own click handler
   window.scrollTo(0, 0);
   view(ctx);
@@ -56,7 +61,7 @@ async function start() {
       <div class="card error-card">
         <h2>Não foi possível carregar o conteúdo</h2>
         <p>Abra o app por um servidor local. Na pasta do projeto, rode:</p>
-        <p><code>python -m http.server 8000</code></p>
+        <p><code>python server.py</code></p>
         <p>e acesse <code>http://localhost:8000</code>.</p>
       </div>`;
     return;
