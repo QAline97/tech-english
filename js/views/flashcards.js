@@ -1,5 +1,5 @@
 import { buildQueue, review } from '../srs.js';
-import { recordAnswer } from '../storage.js';
+import { recordAnswer, recordItemResult } from '../storage.js';
 import { escapeHtml as e, speakButton } from '../dom.js';
 
 const CATEGORY_LABELS = {
@@ -13,6 +13,7 @@ export function renderFlashcards(ctx) {
   const queue = buildQueue(ctx.data.vocabulary, ctx.state.cards);
   let reviewed = 0;
   let knew = 0;
+  const missedNow = new Set(); // cards missed in this session come back; don't undo the miss
 
   if (!queue.length) {
     renderAllDone(ctx);
@@ -66,6 +67,8 @@ export function renderFlashcards(ctx) {
     const card = queue.shift();
     ctx.state.cards[card.id] = review(ctx.state.cards[card.id], knewIt);
     recordAnswer(ctx.state, knewIt);
+    if (!knewIt) missedNow.add(card.id);
+    if (!knewIt || !missedNow.has(card.id)) recordItemResult(ctx.state, card.id, knewIt);
     ctx.save();
     reviewed += 1;
     if (knewIt) knew += 1;

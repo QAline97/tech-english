@@ -1,4 +1,4 @@
-import { createState, currentStreak } from '../storage.js';
+import { createState, currentStreak, weakItemIds } from '../storage.js';
 import { buildQueue, MASTERED_BOX } from '../srs.js';
 
 export function renderHome(ctx) {
@@ -7,6 +7,7 @@ export function renderHome(ctx) {
   const mastered = Object.values(state.cards).filter((p) => p.box >= MASTERED_BOX).length;
   const { answered, correct } = state.stats;
   const accuracy = answered ? `${Math.round((correct / answered) * 100)}%` : '—';
+  const weakCount = weakItemIds(state).length;
 
   ctx.root.innerHTML = `
     <section class="hero">
@@ -38,6 +39,12 @@ export function renderHome(ctx) {
         <h2>Frases do trabalho</h2>
         <p>O que dizer na daily, no chat, em reuniões e e-mails.</p>
         <span class="badge">${data.phrases.length} frases</span>
+      </a>
+      <a class="card mode" href="#/tutor">
+        <span class="mode-icon">🤖</span>
+        <h2>Tutor de IA</h2>
+        <p>Converse, simule reuniões e entrevistas e pratique seus erros.</p>
+        <span class="badge">${weakCount ? `${weakCount} para praticar` : 'novo'}</span>
       </a>
     </section>
 

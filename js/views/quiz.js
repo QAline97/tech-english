@@ -1,5 +1,5 @@
 // Multiple-choice quiz shared by "System messages" and "Work phrases".
-import { recordAnswer } from '../storage.js';
+import { recordAnswer, recordItemResult } from '../storage.js';
 import { escapeHtml as e, shuffle, speakButton } from '../dom.js';
 
 const SESSION_SIZE = 10;
@@ -105,6 +105,7 @@ export function renderQuiz(ctx, mode) {
     ctx.root.querySelector('[data-action="next"]').hidden = false;
 
     recordAnswer(ctx.state, isRight);
+    recordItemResult(ctx.state, item.id, isRight);
     ctx.save();
   }
 
